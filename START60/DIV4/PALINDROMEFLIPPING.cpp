@@ -28,9 +28,6 @@ int main()
         }
         else
         {
-            if (nz % 2 == 0 && no % 2 == 0)
-                cout << "NO\n";
-            else
                 cout << "YES\n";
         }
     }
