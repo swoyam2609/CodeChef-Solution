@@ -1,0 +1,42 @@
+#include <bits/stdc++.h>
+#define ll long long int 
+#define F(i,a,b) for(long long int i=a;i<b;i++)
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); 
+    
+    int test=1;
+    cin>>test;
+    while(test--)
+    {
+        ll a,b;
+        cin>>a>>b;
+        
+        if(a==b) cout<<"YES"<<endl;
+        else 
+        {
+            ll m= min(a,b);
+            ll n = max(a,b);
+            for(int i=1;i<=INT_MAX;i++)
+            {
+                m = m*2;
+                if(m==n) 
+                {   
+                    cout<<"YES"<<endl;
+                    break;
+                }
+                if(m>n) 
+                {
+                    cout<<"NO"<<endl;
+                    break;
+                }
+            }
+        }
+        
+        
+    }
+    return 0;
+}
