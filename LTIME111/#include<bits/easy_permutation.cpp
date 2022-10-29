@@ -1,14 +1,15 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
-int main(){
-    int t,i;
-    cin>>t;
-    while(t--){
-        int n;
-        cin>>n;
-        for(i=n;i>=1;i--){
-            cout<<i<<" ";
+
+int main() {
+    int t, n;
+    cin >> t;
+    while (t--) {
+        cin >> n;
+        while (n) {
+            cout << n-- << " ";
         }
-        cout<<endl;
+        cout << "\n";
     }
+    return 0;
 }
